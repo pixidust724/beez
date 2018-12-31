@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Paytone+One');
-
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -9,12 +8,14 @@
   }
 }
 
+$body-font: 'Paytone One', sans-serif;
+$body-size: 16px;
+
 body {
-  font-family: Verdana;
-  font-size: 18px;
+  font-family: $body-font;
+  font-size: $body-size;
   font-weight: 300;
   line-height: 1.5;
-
   background-color: #ffffff;
   color: #000000;
 }
@@ -25,16 +26,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 1;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 48px;
   height: 64px;
-
   background-color: #ffffff;
-
   transition: background-color 0.8s;
   /* or transition: background-color 0.8s, height 0.8s; */
 }
@@ -84,7 +81,7 @@ div.iris div {
 }
 
 h1 {
-  font-family: 'Paytone One', Arial;
+  font-family: "Paytone One", Arial;
   font-size: 24px;
   font-weight: 900;
   font-style: italic;
@@ -126,7 +123,6 @@ section.hero {
   padding: 160px 48px 160px 48px;
   background-color: #ffffff;
   background-image: url(image1.jpg);
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -160,3 +156,5 @@ section.content:nth-child(odd) div.content {
 /* h2, h3, p, section img, a.button {
   opacity: 0;
 } */
+
+/*# sourceMappingURL=style.scss.map */
